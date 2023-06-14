@@ -131,7 +131,7 @@ a:hover {
     display: inline-block;
     margin-top: 50px;
     transition: all 0.15s ease;
-    cursor: url("../img/avotrans.ico"), default;
+    cursor: url("../public/avotrans.ico"), default;
     text-shadow: 0px -4px 0px darkgreen
 }
 
@@ -217,7 +217,7 @@ a:hover {
 
 .info-section {
     background-color: green;
-    cursor: url("../img/avotrans.ico"), default;
+    cursor: url("../public/avotrans.ico"), default;
 }
 
 .info {
@@ -241,7 +241,7 @@ a:hover {
     background-color: green;
     height: 600px;
     margin: 0 auto;
-    cursor: url("../img/avotrans.ico"), default;
+    cursor: url("../public/avotrans.ico"), default;
 }
 
 .details {
@@ -275,31 +275,31 @@ a:hover {
 }
 
 .sponsor-dsf {
-    background-image: url("../img/dsf.jpg");
+    background-image: url("../public/dsf.jpg");
 }
 
 .sponsor-firefly {
-    background-image: url("../img/firefly.gif");
+    background-image: url("../public/firefly.gif");
 }
 
 .sponsor-fortpoint {
-    background-image: url("../img/fortpoint.png");
+    background-image: url("../public/fortpoint.png");
 }
 
 .sponsor-tripps {
-    background-image: url("../img/tripps.png");
+    background-image: url("../public/tripps.png");
 }
 
 .sponsor-workshop {
-    background-image: url("../img/workshop.jpg");
+    background-image: url("../public/workshop.jpg");
 }
 
 .sponsor-bff {
-    background-image: url("../img/bff.png");
+    background-image: url("../public/bff.png");
 }
 
 h2.the-rules {
-    background-image: url(../img/tomato_gif.webp);
+    background-image: url(../public/tomato_gif.webp);
     background-repeat: no-repeat;
     padding-left: 150px;
     padding-top: 0;
@@ -310,7 +310,7 @@ h2.the-rules {
 }
 
 h2.the-judging {
-    background-image: url(../img/limes_gif.webp);
+    background-image: url(../public/limes_gif.webp);
     background-repeat: no-repeat;
     padding-left: 150px;
     padding-top: 0;
@@ -321,7 +321,7 @@ h2.the-judging {
 }
 
 h2.the-location {
-    background-image: url(../img/garlic_gif.gif);
+    background-image: url(../public/garlic_gif.gif);
     background-repeat: no-repeat;
     padding-left: 150px;
     padding-top: 0;
@@ -341,7 +341,7 @@ label,
     display: block;
     text-align: left;
     margin-bottom: 10px;
-    cursor: url("../img/avotrans.ico"), default;
+    cursor: url("../public/avotrans.ico"), default;
 }
 
 input {
