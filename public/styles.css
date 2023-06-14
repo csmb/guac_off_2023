@@ -1,10 +1,20 @@
+@font-face {
+    font-family: 'windowsregular';
+    src: url('windows_regular-webfont.woff2') format('woff2'),
+         url('windows_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 body {
-/*    font-family: "filson-soft", sans-serif background-color: #fbefe5;*/
-    font-family: 'VT323', monospace;
+/*    font-family: "windowsregular", sans-serif background-color: greenfe5;*/
+    font-family: 'windowsregular', monospace;
     margin: 0;
     color: #f9e3d1;
     /*    background-image: url("../img/woodgrain.jpg");*/
-    background-color: #fff;
+    background-color: green;
     background-repeat: repeat;
     background-size: 50%;
 }
@@ -19,8 +29,8 @@ h4,
 label,
 input,
 .checkbox-header {
-/*    font-family: "filson-soft", sans-serif;*/
-font-family: 'VT323', monospace;
+/*    font-family: "windowsregular", sans-serif;*/
+font-family: 'windowsregular', monospace;
 }
 
 h1 {
@@ -36,11 +46,11 @@ h2 {
 
 p,
 ol {
-    font-size: 15px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 32px;
     margin: 0;
     font-weight: 400;
-    color: #fbf3ed;
+    color: palegreen;
 }
 
 ul {
@@ -94,8 +104,8 @@ q:after {
     text-align: left;
     display: block;
     color: #fc5d2b;
-    font-family: 'VT323', monospace;
-    color: #221d00;
+    font-family: 'windowsregular', monospace;
+    color: palegreen;
     margin: -510px auto 0;
     max-width: 900px;
 }
@@ -135,7 +145,7 @@ a:hover {
 .button {
     padding: 24px 40px;
     text-align: center;
-    font-family: 'VT323', monospace;
+    font-family: 'windowsregular', monospace;
     font-weight: 600;
     border-radius: 8px;
     transition: all 0.15s ease;
@@ -145,7 +155,7 @@ a:hover {
 .button--hero {
     bottom: 0;
     float: none;
-    background-color: #97bd33;
+    background-color: green;
     background-size: 50%;
     margin: 0 auto;
     width: 280px;
@@ -158,12 +168,12 @@ a:hover {
 }
 
 .button--hero:hover {
-    background-color: #afcf4f;
+    background-color: greenf4f;
     text-decoration: none;
 }
 
 .button--hero:active {
-    background-color: #7ec325;
+    background-color: green325;
 }
 
 .button--hero:focus {
@@ -173,18 +183,18 @@ a:hover {
 .button--submit {
     font-size: 18px;
     color: #faf2ec;
-    background-color: #df4718;
+    background-color: green718;
     border: 2px solid #341106;
     height: 60px;
     padding-top: 15px;
 }
 
 .button--submit:hover {
-    background-color: #df5518;
+    background-color: green518;
 }
 
 .button--submit:active {
-    background-color: #cd3e12;
+    background-color: greene12;
 }
 
 #container {
@@ -206,8 +216,8 @@ a:hover {
 .title .title-year,
 .title .title-name {
     text-align: center;
-    font-family: 'VT323', monospace;
-    color: #221d00;
+    font-family: 'windowsregular', monospace;
+    color: palegreen;
     
 }
 
@@ -245,7 +255,7 @@ a:hover {
 }
 
 .info-section {
-    background-color: rgba(126, 152, 26, .9);
+    background-color: green;
     cursor: url("../img/avotrans.ico"), default;
 }
 
@@ -257,7 +267,7 @@ a:hover {
 }
 
 .info h1 {
-    color: #fbf3ed;
+    color: palegreen;
     margin: 30px auto 50px;
     text-align: center;
     max-width: 740px;
@@ -277,7 +287,7 @@ a:hover {
 }
 
 .form-section {
-    background-color: rgba(126, 152, 26, .9);
+    background-color: green;
     height: 600px;
     margin: 0 auto;
     cursor: url("../img/avotrans.ico"), default;
@@ -286,13 +296,13 @@ a:hover {
 .details {
     border: 2px solid #97bd33;
     padding: 30px;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: green;
     text-align: center;
     border-radius: 8px;
 }
 
 .sponsors-section {
-    background-color: #fbf3ed;
+    background-color: green3ed;
     padding: 50px 0;
 }
 
@@ -377,7 +387,7 @@ label,
 .checkbox-header {
     text-transform: uppercase;
     font-size: 18px;
-    color: #221d00;
+    color: palegreen;
     font-weight: 600;
     margin-right: 10px;
     display: block;
@@ -404,27 +414,27 @@ input {
 input::-webkit-input-placeholder {
     font-size: 18px;
     color: #98BB22;
-    font-family: 'VT323', monospace;
+    font-family: 'windowsregular', monospace;
 }
 
 input:-moz-placeholder {
     /* Firefox 18- */
     font-size: 18px;
-    font-family: 'VT323', monospace;
+    font-family: 'windowsregular', monospace;
     color: #98BB22;
 }
 
 input::-moz-placeholder {
     /* Firefox 19+ */
     font-size: 18px;
-    font-family: 'VT323', monospace;
+    font-family: 'windowsregular', monospace;
     color: #98BB22;
 }
 
 input:-ms-input-placeholder {
     font-size: 18px;
     color: #98BB22;
-    font-family: 'VT323', monospace;
+    font-family: 'windowsregular', monospace;
 }
 
 form {}
@@ -461,7 +471,7 @@ input.checkbox {
 label.checkbox-inline {
     text-transform: none;
     display: block;
-    color: #fbf3ed;
+    color: palegreen;
     font-size: 18px;
     font-weight: 400;
 }
@@ -522,7 +532,7 @@ label.checkbox-inline {
     /* Styles */
     body {
         background-size: 200%;
-        font-family: 'VT323', monospace;
+        font-family: 'windowsregular', monospace;
     }
     .hero {
         padding: 20px;
