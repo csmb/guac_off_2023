@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./public/styles.css">
     <link rel="shortcut icon" type="image/png" href="http://www.guacamole.expert/avotrans.ico">
+    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
     <title>San. Fran. Guac. Off 2023</title>
 </head>
 
 <body>
-
-  <img src="./public/animcomp.gif">
-  <img src="./public/cookingwitch.gif">
-  <img src="./public/ana_salt.gif">
-
+    <img src="./public/animcomp.gif">
+    <img src="./public/cookingwitch.gif">
+    <img src="./public/ana_salt.gif">
+    <midi-player src="./public/fullhouse.mid" sound-font visualizer="#myVisualizer">
+    </midi-player>
     <div class="hero">
         <div class="title">
             <div class="title-year">
@@ -33,7 +34,6 @@
             </div>
         </div>
         <img src="./public/drippy.gif">
-        <!-- <div><a href="http://www.guacamole.expert/#form" class="button button--hero">Count me in!</a></div> -->
     </div>
     <div class="info-section">
         <div class="info">
@@ -70,34 +70,7 @@
             </div>
         </div>
     </div>
-    <!--  <div class="form-section" id="form">
-        <div class="form-container">
-            <h2>Let us know if you're coming. Répondez s'il vous plaît.</h2>
-            <form class="form-horizontal lead" role="form" action="http://www.guacamole.expert/" method="post">
-                <div class="form-group">
-                    <label class="form-label">Your Name</label>
-                    <input class="form-control" type="text" name="name" placeholder="Guacamole Champ" required="">
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Your Email</label>
-                    <input class="form-control" type="email" name="email" placeholder="guac-lover@gmail.com" required="">
-                </div>
-                <div class="form-group">
-                    <div class="checkbox-header">What are you bringing?</div>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" class="checkbox" value="true" name="guac">The City's Best Guacamole
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" class="checkbox" value="true" name="beer">Something to drink
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" class="checkbox" value="true" name="other">All my friend(s)
-                    </label>
-                </div>
-                <button type="submit" class="button button--submit">Count me in!</button>
-            </form>
-        </div>
-    </div> -->
+   
     <div class="sponsors-section">
         <div class="sponsors">
             <ul>
@@ -105,10 +78,8 @@
             </ul>
         </div>
     </div>
-
-<img src="./public/doglogo.gif">
-<img src="./public/banner.gif">
-
+    <img src="./public/doglogo.gif">
+    <img src="./public/banner.gif">
 </body>
 
 </html>
