@@ -1,20 +1,43 @@
 @font-face {
     font-family: 'windowsregular';
     src: url('windows_regular-webfont.woff2') format('woff2'),
-         url('windows_regular-webfont.woff') format('woff');
+        url('windows_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+/* For desktop devices */
+@media only screen and (min-width: 768px) {
+
+    html,
+    body {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
 
 body {
+    cursor: url(avotrans.ico), default;
     font-family: 'windowsregular', monospace;
-    background-color: green;
-    background-repeat: repeat;
-    background-size: 50%;
+    background-color: olivedrab;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1280px;
 }
 
 p,
@@ -28,23 +51,12 @@ label,
 input,
 .checkbox-header {
     font-family: "windowsregular", sans-serif;
-font-family: 'windowsregular', monospace;
-}
-
-h1 {
-    line-height: 100px;
-    font-size: 80px;
-}
-
-h2 {
-    font-size: 36px;
-    line-height: 42px;
-    color: greenyellow;
+    font-family: 'windowsregular', monospace;
 }
 
 p,
 ol {
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 32px;
     margin: 0;
     font-weight: 400;
@@ -67,7 +79,7 @@ strong {
 }
 
 q {
-    quotes: '\201c' '\201d';
+    quotes: '\201c''\201d';
 }
 
 q:before {
@@ -85,15 +97,8 @@ q:after {
     display: block;
 }
 
-.stripes {
-    height: 60px;
-    background: repeating-linear-gradient( 0deg, #701830 0%, #701830 20%, #a10034 20%, #a10034 40%, #d7253b 40%, #d7253b 60%, #fc5d2b 60%, #fc5d2b 80%, #ff9743 80%, #ff9743 100%);
-    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(00%, #ff9743), color-stop(20%, #ff9743), color-stop(20%, #fc5d2b), color-stop(40%, #fc5d2b), color-stop(40%, #d7253b), color-stop(60%, #d7253b), color-stop(60%, #a10034), color-stop(80%, #a10034), color-stop(80%, #701830), color-stop(100%, #701830));
-}
-
 .hero {
-    display: block;
-    padding: 100px 0;
+    text-align: center;
 }
 
 .header-info {
@@ -102,10 +107,16 @@ q:after {
 }
 
 .header-time {
-    font-size: 40px;
-    line-height: 44px;
-    font-weight: 600;
-    padding-top: 8px;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+div.rules {
+    margin-bottom: 50px;
+}
+
+h2.rules {
+    margin: 10px 0;
 }
 
 span.superscript {
@@ -122,109 +133,39 @@ a:hover {
 }
 
 .button {
-    padding: 25px 50px ;
+    padding: 25px 50px;
     color: whitesmoke;
     background-color: goldenrod;
-    font-size: 40px;
+    font-size: 1.5rem;
     box-shadow: 0px 10px 0px darkgreen;
     border-radius: 10px;
     display: inline-block;
     margin-top: 50px;
     transition: all 0.15s ease;
-    cursor: url("../public/avotrans.ico"), default;
+    cursor: url("avotrans.ico"), default;
     text-shadow: 0px -4px 0px darkgreen
 }
 
-.button--hero {
-
-}
-
-.button--hero:hover {
-    background-color: greenf4f;
-    text-decoration: none;
-}
-
-.button--hero:active {
-    background-color: green325;
-}
-
-.button--hero:focus {
-    outline: none;
-}
-
-.button--submit {
-    font-size: 18px;
-    color: #faf2ec;
-    background-color: green718;
-    border: 2px solid #341106;
-    height: 60px;
-    padding-top: 15px;
-}
-
-.button--submit:hover {
-    background-color: green518;
-}
-
-.button--submit:active {
-    background-color: greene12;
-}
-
-#container {
-    background-repeat: repeat;
-    background-size: 50%;
-    mix-blend-mode: color-burn;
-}
-
-.title {
-
-}
+.title {}
 
 .title-year {
-    font-size: 50px;
+    font-size: 3rem;
+    line-height: 3rem;
     color: lightyellow;
 }
 
 .title-name {
-    font-size: 300px;
-    margin-top: -50px;
-    color: gold;
-    text-shadow: 0px 18px 0px limegreen;
-}
-
-.col {
-    display: inline-block;
-    max-width: 360px;
-    margin-right: 45px;
-    vertical-align: top;
-}
-
-.col-sm {
-    float: right;
-}
-
-.col-sm a {
-    color: #97bd33;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.col-sm a:hover {
-    color: #acd541;
-    font-weight: 600;
+    font-size: 16rem;
+    line-height: 16rem;
+    color: chartreuse;
+    text-shadow:
+        .5rem .5rem 0px darkgreen,
+        1rem 1rem 0px darkgreen,
+        1.5rem 1.5rem 0px black;
 }
 
 .info-section {
-    background-color: green;
-    cursor: url("../public/avotrans.ico"), default;
-}
-
-.info {
-    margin: 0 auto;
-    max-width: 1000px;
-    color: #f9e3d1;
-    padding: 30px 0 90px;
+    cursor: url("avotrans.ico"), default;
 }
 
 .info-section.success .info {
@@ -232,28 +173,25 @@ a:hover {
 }
 
 .info-intro {
-    color: gold;
+    color: ivory;
     text-align: left;
 
 }
 
 .form-section {
-    background-color: green;
     height: 600px;
     margin: 0 auto;
-    cursor: url("../public/avotrans.ico"), default;
+    cursor: url("avotrans.ico"), default;
 }
 
 .details {
     border: 2px solid #97bd33;
     padding: 30px;
-    background-color: green;
     text-align: center;
     border-radius: 8px;
 }
 
 .sponsors-section {
-    background-color: green3ed;
     padding: 50px 0;
 }
 
@@ -274,202 +212,91 @@ a:hover {
     background-position: center;
 }
 
+div.divider {
+    background-image: url(drippy.gif);
+    width: 100%;
+    height: 10px;
+    background-repeat: repeat-x;
+    margin: 50px 0;
+}
+
 .sponsor-dsf {
-    background-image: url("../public/dsf.jpg");
+    background-image: url("dsf.jpg");
 }
 
 .sponsor-firefly {
-    background-image: url("../public/firefly.gif");
+    background-image: url("firefly.gif");
 }
 
 .sponsor-fortpoint {
-    background-image: url("../public/fortpoint.png");
+    background-image: url("fortpoint.png");
 }
 
 .sponsor-tripps {
-    background-image: url("../public/tripps.png");
+    background-image: url("tripps.png");
 }
 
 .sponsor-workshop {
-    background-image: url("../public/workshop.jpg");
+    background-image: url("workshop.jpg");
 }
 
 .sponsor-bff {
-    background-image: url("../public/bff.png");
+    background-image: url("bff.png");
 }
 
-h2.the-rules {
-    background-image: url(../public/tomato_gif.webp);
-    background-repeat: no-repeat;
-    padding-left: 150px;
-    padding-top: 0;
-    width: 100%;
-    background-size: 10%;
-    height: 80px;
-    margin-bottom: 0;
-}
-
-h2.the-judging {
-    background-image: url(../public/limes_gif.webp);
-    background-repeat: no-repeat;
-    padding-left: 150px;
-    padding-top: 0;
-    width: 100%;
-    background-size: 10%;
-    height: 80px;
-    margin-bottom: 0;
-}
-
-h2.the-location {
-    background-image: url(../public/garlic_gif.gif);
-    background-repeat: no-repeat;
-    padding-left: 150px;
-    padding-top: 0;
-    width: 100%;
-    background-size: 10%;
-    height: 80px;
-    margin-bottom: 0;
-}
-
-label,
-.checkbox-header {
-    text-transform: uppercase;
-    font-size: 18px;
-    color: palegreen;
-    font-weight: 600;
-    margin-right: 10px;
-    display: block;
-    text-align: left;
-    margin-bottom: 10px;
-    cursor: url("../public/avotrans.ico"), default;
-}
-
-input {
-    height: 60px;
-    padding-left: 20px;
-    font-family: sans-serif;
-    font-size: 18px;
-    background: #f5f8e8;
-    border: 1px solid rgb(55, 69, 8);
-    box-shadow: inset 0px 1px 3px 0px #334004;
-    border-radius: 4px;
-    width: 280px;
-    display: block;
-    color: #283304;
-    float: left;
-}
-
-input::-webkit-input-placeholder {
-    font-size: 18px;
-    color: #98BB22;
-    font-family: 'windowsregular', monospace;
-}
-
-input:-moz-placeholder {
-    /* Firefox 18- 
-    font-size: 18px;
-    font-family: 'windowsregular', monospace;
-    color: #98BB22;
-}
-
-input::-moz-placeholder {
-    /* Firefox 19+ */
-    font-size: 18px;
-    font-family: 'windowsregular', monospace;
-    color: #98BB22;
-}
-
-input:-ms-input-placeholder {
-    font-size: 18px;
-    color: #98BB22;
-    font-family: 'windowsregular', monospace;
-}
-
-form {}
-
-.form-group {
-    display: inline-block;
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.form-group:last-of-type {
-    display: block;
-}
-
-.form-container {
-    max-width: 1000px;
+.warning {
     margin: 0 auto;
-    padding: 38px 0;
-}
-
-input.checkbox {
-    height: auto;
-    width: auto;
-    margin-right: 13px;
-}
-
-label.checkbox-inline {
-    text-transform: none;
-    display: block;
-    color: palegreen;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-#pepper {
-    right: 40%;
-    bottom: 45%;
-    width: 200px;
-    position: absolute;
-}
-
-#cilantro {
-    left: 36%;
-    bottom: 32%;
-    width: 245px;
-    position: absolute;
-}
-
-#lime {
-    left: 39%;
-    bottom: 51%;
-    width: 176px;
-    position: absolute;
-}
-
-#tomato {
-    left: 38%;
-    bottom: 69%;
-    width: 180px;
-    position: absolute;
-}
-
-#garlic {
-    bottom: 50%;
-    right: 41%;
-    width: 200px;
-    position: absolute;
-}
-
-#onion {
-    bottom: 44%;
-    right: 36%;
-    position: absolute;
-    width: 248px;
-}
-
-#avocado {
-    right: 36%;
-    bottom: 41%;
-    width: 272px;
-    position: absolute;
 }
 
 
-/* Smartphones (portrait) ----------- */
+/* For mobile devices */
+@media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 480px) {
+    html,
+    body {
+        font-size: 24px;
+        overflow-x: hidden;
+    }
 
-    
+    body {
+        max-width: 100%;
+        padding: 20px 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .warning {
+        text-align: center;
+        margin-top: 400px;
+    }
+
+    .title-year {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        color: lightyellow;
+    }
+
+    .title-name {
+        font-size: 7rem;
+        line-height: 7rem;
+        color: chartreuse;
+        text-shadow:
+            .5rem .5rem 0px darkgreen,
+            1rem 1rem 0px darkgreen,
+            1.5rem 1.5rem 0px black;
+    }
 }
