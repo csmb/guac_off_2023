@@ -245,7 +245,9 @@ div.divider {
 }
 
 .warning {
-    margin: 0 auto;
+    margin: 0 15%;
+    text-align: center;
+
 }
 
 
@@ -256,6 +258,12 @@ div.divider {
     body {
         font-size: 24px;
         overflow-x: hidden;
+    }
+
+    .warning {
+        margin: 0 auto;
+        text-align: center;
+
     }
 
     body {
