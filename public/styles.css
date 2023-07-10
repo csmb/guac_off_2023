@@ -16,7 +16,7 @@
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     h2 {
@@ -36,6 +36,8 @@ body {
     cursor: url(avotrans.ico), default;
     font-family: 'windowsregular', monospace;
     background-color: olivedrab;
+    background-image: url(guac_bg.gif);
+    background-repeat: repeat;
     margin: 0 auto;
     max-width: 1280px;
 }
@@ -104,6 +106,7 @@ q:after {
 .header-info {
     display: block;
     color: yellow;
+    text-shadow: 4px 4px 1px black;
 }
 
 .header-time {
@@ -175,6 +178,7 @@ a:hover {
 .info-intro {
     color: ivory;
     text-align: left;
+    text-shadow: 4px 4px 1px black;
 
 }
 
