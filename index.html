@@ -44,6 +44,9 @@
             },
         });
         webamp.renderWhenReady(document.getElementById('winamp-container'));
+        webamp.renderWhenReady(document.getElementById('app')).then(() => {
+            webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
+        });
         </script>
     </div>
     <div class="hero">
