@@ -43,10 +43,18 @@
                 url: "./public/XBOX_MasterAmp.wsz"
             },
         });
-        // webamp.renderWhenReady(document.getElementById('winamp-container'));
-        webamp.renderWhenReady(document.getElementById('winamp-container')).then(() => {
-            webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
-        });
+        
+        webamp.renderWhenReady(document.getElementById('winamp-container'));
+        
+        //
+        // This bit will hide the playllist:
+        //
+        // webamp.renderWhenReady(document.getElementById('winamp-container')).then(() => {
+        //     webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
+        // });
+        //
+        //
+
         </script>
     </div>
     <div class="hero">
