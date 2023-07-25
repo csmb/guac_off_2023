@@ -43,8 +43,8 @@
                 url: "./public/XBOX_MasterAmp.wsz"
             },
         });
-        webamp.renderWhenReady(document.getElementById('winamp-container'));
-        webamp.renderWhenReady(document.getElementById('app')).then(() => {
+        // webamp.renderWhenReady(document.getElementById('winamp-container'));
+        webamp.renderWhenReady(document.getElementById('winamp-container')).then(() => {
             webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
         });
         </script>
