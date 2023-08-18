@@ -6,7 +6,9 @@
     <link rel="stylesheet" type="text/css" href="./public/styles.css">
     <link rel="shortcut icon" type="image/png" href="https://guacamole.expert/public/avotrans.ico">
     <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="./public/script.js"></script>
+    <script src='./public/solitaireVictory.js'></script>
     <title>San. Fran. Guac. Off 2023</title>
 </head>
 
@@ -43,9 +45,9 @@
                 url: "./public/XBOX_MasterAmp.wsz"
             },
         });
-        
+
         webamp.renderWhenReady(document.getElementById('winamp-container'));
-        
+
         //
         // This bit will hide the EQ:
         //
@@ -54,19 +56,18 @@
         // });
         //
         //
-
         </script>
     </div>
     <div class="hero">
         <img src="./public/spinny.gif">
         <div class="title">
-            <div class="title-year">
+            <div class="title-year solitaire">
                 The 12<span class="superscript">th</span> Annual San Francisco
             </div>
-            <div class="title-name">
+            <div class="title-name solitaire">
                 Guac Off
             </div>
-            <div class="title-year">
+            <div class="title-year solitaire">
                 Eat guacamole with your friends and neighbors
             </div>
         </div>
@@ -136,11 +137,26 @@
         <marquee behavior="alternate" direction="right">
             <p><a href="https://guacwalk.org/">The real reward was the guacamole friends we made along the way.</a></p>
         </marquee>
+        <button class='clear' style="z-index:'9999'">Clear the Solitaire Mess</button>
+        <button class='everything' style="z-index:'9999'">DO NOT CLICK THIS BUTTON YOU'VE BEEN WARNED</button>
     </div>
     <div class="form" id="googleform">
         <button onclick="hideform()" class="btn">CLOSE</button>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWhrB29wjwUB9FvG26jeGa9_DCrbLjm2hWTi6muebYQ_65cA/viewform?embedded=true" width="640" height="944" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
+    <script>
+    $(document).on('ready', function() {
+        $('img, .solitaire, .sponsor').click(function(e) {
+            $(e.target).solitaireVictory();
+        });
+        $(document).on('click', 'button.clear', function() {
+            $('').solitaireVictory({ clear: true });
+        })
+        $(document).on('click', 'button.everything', function() {
+            $('h1, h2, h3, p, img').solitaireVictory();
+        })
+    })
+    </script>
 </body>
 
 </html>
