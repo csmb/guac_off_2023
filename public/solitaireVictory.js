@@ -4,9 +4,9 @@
 
         settings = settings || {};
 
-        var g = settings.g || -3;
-        var dt = settings.dt || 20;
-        var bounce = settings.bounce || 0.7;
+        var g = settings.g || -1.5;
+        var dt = settings.dt || 24;
+        var bounce = settings.bounce || 0.75;
         var endVelocity = settings.endVelocity || 20;
         var stagger = settings.stagger || 1000;
         var relativeToDocument = settings.relativeToDocument || true;
