@@ -308,8 +308,36 @@ button {
     background-image: url("fortpoint.png");
 }
 
-.sponsor-tripps {
-    background-image: url("tripps.png");
+.sponsor-laughing-monk {
+    background-image: url("laughing_monk.png");
+}
+
+.sponsor-enterprise-brewing {
+    background-image: url("enterprise-brewing.png");
+}
+
+.sponsor-emperor-norton {
+    background-image: url("emperor-norton.jpg");
+}
+
+.sponsor-burrito-justice {
+    background-image: url("burrito-justice.jpg");
+}
+
+.sponsor-tacolicious {
+    background-image: url("tacolicious.png");
+}
+
+.sponsor-emporium {
+    background-image: url("emporium.png");
+}
+
+.sponsor-sfneon {
+    background-image: url("sfneon.png");
+}
+
+.sponsor-fleetwood {
+    background-image: url("fleetwood.png");
 }
 
 .sponsor-workshop {
