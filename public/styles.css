@@ -344,6 +344,10 @@ button {
     background-image: url("workshop.jpg");
 }
 
+.sponsor-scenic-routes {
+    background-image: url("scenic-routes.png");
+}
+
 .sponsor-bff {
     background-image: url("bff.png");
 }
