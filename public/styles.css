@@ -352,6 +352,10 @@ button {
     background-image: url("bff.png");
 }
 
+.sponsor-sf-in-bloom {
+    background-image: url("sf-in-bloom.png");
+}
+
 .warning {
     margin: 0 15%;
     text-align: center;
