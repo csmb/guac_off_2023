@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div style="width:40px; height:40px; position:absolute; top:50px; left:50px;">
+    <div class="winamp">
         <div id="winamp-container"></div>
         <script>
         const Winamp = window.Webamp;
@@ -44,18 +44,26 @@
             initialSkin: {
                 url: "./public/XBOX_MasterAmp.wsz"
             },
+
+            // Optional. An array of objects representing skins.
+            // These will appear in the "Options" menu under "Skins".
+            // Note: These URLs must be served with the correct CORs headers.
+            availableSkins: [
+                { url: "./public/Homer_Simpson_Goes_3D.wsz", name: "Home Simpson Goes 3d" },
+                { url: "./public/Matrix_by_sukhi.wsz.wsz", name: "The Matrix" },
+                { url: "./public/MORPHEUSamp1.wsz.wsz", name: "MorpheusAmp" },
+                { url: "./public/obi_wan_rules.wsz.wsz", name: "Obi Wan Rules" },
+                { url: "./public/San_Francisco_Giants.wsz.wsz", name: "San Fran Giants" },
+                { url: "./public/skinbs1.wsz.wsz", name: "Skins BS1" },
+                { url: "./public/XBOX_MasterAmp.wsz.wsz", name: "XBOX MasterAmp" },
+            ],
+
         });
 
-        webamp.renderWhenReady(document.getElementById('winamp-container'));
-
-        //
-        // This bit will hide the EQ:
-        //
-        // webamp.renderWhenReady(document.getElementById('winamp-container')).then(() => {
-        //     webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
-        // });
-        //
-        //
+        webamp.renderWhenReady(document.getElementById('winamp-container')).then(() => {
+            webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
+            webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "playlist" });
+        });
         </script>
     </div>
     <div class="hero">
@@ -122,8 +130,6 @@
     <div class="sponsors-section">
         <div class="sponsors">
             <ul>
-                <li><img src="./public/doglogo.gif"></li>
-                <li><img src="./public/banner.gif"></li>
                 <li class="sponsor sponsor-bff">BFF.fm</li>
                 <li class="sponsor sponsor-laughing-monk">Laughing Monk</li>
                 <li class="sponsor sponsor-enterprise-brewing">Enterprise Brewing</li>
