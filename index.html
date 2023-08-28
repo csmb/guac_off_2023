@@ -61,9 +61,34 @@
         });
 
         webamp.renderWhenReady(document.getElementById('winamp-container')).then(() => {
+            // webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
+            // webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "playlist" });
+        });
+
+        const isMobileDevice = () => {
+            // Check if the device has a touch screen.
+            if (('ontouchstart' in window) || window.navigator.msMaxTouchPoints > 0) {
+                return true;
+            }
+
+            // Check the user agent.
+            const userAgent = window.navigator.userAgent;
+            const mobileUserAgents = [/Android/i, /iPhone/i, /iPad/i, /iPod/i];
+
+            for (const mobileUserAgent of mobileUserAgents) {
+                if (mobileUserAgent.test(userAgent)) {
+                    return true;
+                }
+            }
+
+            return false;
+        };
+
+        if (isMobileDevice()) {
+            // Run the code on mobile devices.
             webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
             webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "playlist" });
-        });
+        }
         </script>
     </div>
     <div class="hero">
