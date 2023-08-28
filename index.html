@@ -18,6 +18,24 @@
         <script>
         const Winamp = window.Webamp;
         // All configuration options are optional.
+
+        const availableSkins = [
+            { url: "./public/Homer_Simpson_Goes_3D.wsz", name: "Home Simpson Goes 3d" },
+            { url: "./public/Matrix_by_sukhi.wsz", name: "The Matrix" },
+            { url: "./public/MORPHEUSamp1.wsz", name: "MorpheusAmp" },
+            { url: "./public/obi_wan_rules.wsz", name: "Obi Wan Rules" },
+            { url: "./public/San_Francisco_Giants.wsz", name: "San Fran Giants" },
+            { url: "./public/skinbs1.wsz", name: "Skins BS1" },
+            { url: "./public/XBOX_MasterAmp.wsz", name: "XBOX MasterAmp" },
+        ];
+
+        // Pick a random skin.
+        const randomIndex = Math.floor(Math.random() * availableSkins.length);
+        const randomSkin = availableSkins[randomIndex];
+
+        // Set the initial skin.
+        initialSkin = randomSkin;
+
         const webamp = new Webamp({
             // Optional.
             initialTracks: [{
@@ -41,24 +59,58 @@
                     url: "./public/r_u_going_2_sf.mp3",
                 },
             ],
-            initialSkin: {
-                url: "./public/MORPHEUSamp1.wsz"
-            },
+            initialSkin: initialSkin,
 
             // Optional. An array of objects representing skins.
             // These will appear in the "Options" menu under "Skins".
             // Note: These URLs must be served with the correct CORs headers.
-            availableSkins: [
-                { url: "./public/Homer_Simpson_Goes_3D.wsz", name: "Home Simpson Goes 3d" },
-                { url: "./public/Matrix_by_sukhi.wsz", name: "The Matrix" },
-                { url: "./public/MORPHEUSamp1.wsz", name: "MorpheusAmp" },
-                { url: "./public/obi_wan_rules.wsz", name: "Obi Wan Rules" },
-                { url: "./public/San_Francisco_Giants.wsz", name: "San Fran Giants" },
-                { url: "./public/skinbs1.wsz", name: "Skins BS1" },
-                { url: "./public/XBOX_MasterAmp.wsz", name: "XBOX MasterAmp" },
-            ],
+            availableSkins: availableSkins,
 
         });
+
+
+
+        // const webamp = new Webamp({
+        //     // Optional.
+        //     initialTracks: [{
+        //             metaData: {
+        //                 artist: "Full House",
+        //                 title: "Theme Song",
+        //             },
+        //             url: "./public/fullhouse.mp3",
+        //         }, {
+        //             metaData: {
+        //                 artist: "Chip Sound FX",
+        //                 title: "Crunching Chips",
+        //             },
+        //             url: "./public/eating-chips-81092.mp3",
+        //         },
+        //         {
+        //             metaData: {
+        //                 artist: "SF.midi",
+        //                 title: "Scott McKenzie",
+        //             },
+        //             url: "./public/r_u_going_2_sf.mp3",
+        //         },
+        //     ],
+        //     initialSkin: {
+        //         url: "./public/MORPHEUSamp1.wsz"
+        //     },
+
+        //     // Optional. An array of objects representing skins.
+        //     // These will appear in the "Options" menu under "Skins".
+        //     // Note: These URLs must be served with the correct CORs headers.
+        //     availableSkins: [
+        //         { url: "./public/Homer_Simpson_Goes_3D.wsz", name: "Home Simpson Goes 3d" },
+        //         { url: "./public/Matrix_by_sukhi.wsz", name: "The Matrix" },
+        //         { url: "./public/MORPHEUSamp1.wsz", name: "MorpheusAmp" },
+        //         { url: "./public/obi_wan_rules.wsz", name: "Obi Wan Rules" },
+        //         { url: "./public/San_Francisco_Giants.wsz", name: "San Fran Giants" },
+        //         { url: "./public/skinbs1.wsz", name: "Skins BS1" },
+        //         { url: "./public/XBOX_MasterAmp.wsz", name: "XBOX MasterAmp" },
+        //     ],
+
+        // });
 
         webamp.renderWhenReady(document.getElementById('winamp-container')).then(() => {
             // webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
