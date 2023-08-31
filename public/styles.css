@@ -356,6 +356,14 @@ button {
     background-image: url("sf-in-bloom.png");
 }
 
+.sponsor-mbc {
+    background-image: url("mbc.png");
+}
+
+.sponsor-casements {
+    background-image: url("casements.jpeg");
+}
+
 .warning {
     margin: 0 15%;
     text-align: center;

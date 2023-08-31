@@ -68,6 +68,50 @@
 
         });
 
+
+
+        // const webamp = new Webamp({
+        //     // Optional.
+        //     initialTracks: [{
+        //             metaData: {
+        //                 artist: "Full House",
+        //                 title: "Theme Song",
+        //             },
+        //             url: "./public/fullhouse.mp3",
+        //         }, {
+        //             metaData: {
+        //                 artist: "Chip Sound FX",
+        //                 title: "Crunching Chips",
+        //             },
+        //             url: "./public/eating-chips-81092.mp3",
+        //         },
+        //         {
+        //             metaData: {
+        //                 artist: "SF.midi",
+        //                 title: "Scott McKenzie",
+        //             },
+        //             url: "./public/r_u_going_2_sf.mp3",
+        //         },
+        //     ],
+        //     initialSkin: {
+        //         url: "./public/MORPHEUSamp1.wsz"
+        //     },
+
+        //     // Optional. An array of objects representing skins.
+        //     // These will appear in the "Options" menu under "Skins".
+        //     // Note: These URLs must be served with the correct CORs headers.
+        //     availableSkins: [
+        //         { url: "./public/Homer_Simpson_Goes_3D.wsz", name: "Home Simpson Goes 3d" },
+        //         { url: "./public/Matrix_by_sukhi.wsz", name: "The Matrix" },
+        //         { url: "./public/MORPHEUSamp1.wsz", name: "MorpheusAmp" },
+        //         { url: "./public/obi_wan_rules.wsz", name: "Obi Wan Rules" },
+        //         { url: "./public/San_Francisco_Giants.wsz", name: "San Fran Giants" },
+        //         { url: "./public/skinbs1.wsz", name: "Skins BS1" },
+        //         { url: "./public/XBOX_MasterAmp.wsz", name: "XBOX MasterAmp" },
+        //     ],
+
+        // });
+
         webamp.renderWhenReady(document.getElementById('winamp-container')).then(() => {
             // webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "equalizer" });
             // webamp.store.dispatch({ type: "TOGGLE_WINDOW", windowId: "playlist" });
@@ -133,7 +177,7 @@
                     <h2 class="rules">The Rules</h2>
                     <ol>
                         <li>Your guacamole must use <strong>at least 8 avocados</strong>.</li>
-                        <li>Bring guacamole. Or a beverage. Or your dog.</li>
+                        <li>Bring guacamole. Or your friend. Or a beverage.</li>
                         <li>No matter what you decide to bring, bring your friends!</li>
                         <li>We'll provide the chips, <em>mystery prizes</em>, and the coveted <strong>Guacamole Glory Trophy</strong>.</li>
                     </ol>
@@ -174,6 +218,8 @@
                 <li class="sponsor sponsor-fleetwood">Fleetwood</li>
                 <li class="sponsor sponsor-scenic-routes">Scenic Routes</li>
                 <li class="sponsor sponsor-sf-in-bloom">SF In Bloom</li>
+                <li class="sponsor sponsor-casements">Casements</li>
+                <li class="sponsor sponsor-mbc">Mission Bowling Club</li>
             </ul>
         </div>
     </div>
