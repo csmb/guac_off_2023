@@ -3,7 +3,7 @@ body {
     background-color: #329f21;
     color: #0f0;
     margin: 0;
-    padding: 20px;
+    padding: 0px 20px;
     background-image: linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0) 50%, rgba(0, 0, 0, 0.1) 100%);
     background-size: 100% 3px;
     /* background-repeat: no-repeat; */
@@ -13,6 +13,8 @@ body {
 #console {
   white-space: pre-wrap;
   overflow: auto;
+  margin: auto;   
+  height: 100vh;
 }
 
 .cursor {
