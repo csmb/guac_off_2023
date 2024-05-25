@@ -1,11 +1,3 @@
-/* Media query for mobile devices */
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 12px; /* Change font size to 14px for mobile */
-  }
-}
-
-/* Your existing styles */
 body {
   font-family: monospace;
   font-size: 16px;
@@ -32,4 +24,11 @@ body {
 @keyframes blink {
   from { opacity: 1; }
   to { opacity: 0; }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px; /* Change font size to 14px for mobile */
+  }
 }
