@@ -1,86 +1,141 @@
 const consoleElement = document.getElementById('console');
 const consoleLines = [
-    { text: ".", delay: 150 },
-    { text: ".. ", delay: 150 },
-    { text: "... ", delay: 150 },
-    { text: "....", delay: 150 },
-    { text: "Welcome to:", delay: 150 },
-    { text: "G.U.A.C. O.F.F. 2024", delay: 150 },
-    { text: "Booting system...", delay: 150 },
-    { text: ".", delay: 150 },
-    { text: ".. ", delay: 150 },
-    { text: "... ", delay: 150 },
-    { text: "....", delay: 150 },
-    { text: "...", delay: 150 },
-    { text: "..", delay: 150 },
-    { text: ".", delay: 150 },
-    { text: "Welcome to:", delay: 150 },
-    { text: "DEBUG MODE ENABLED...", delay: 150 },
-    { text: "CONTENT WILL LOAD FAST FOR TESTING", delay: 150 },
-    { text: "....", delay: 150 },
-    { text: "...", delay: 150 },
-    { text: "..", delay: 150 },
-    { text: ".", delay: 150 },
-    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⣾⣿⣿⣷⢰⣆⠀⠀", delay: 100 },
-    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⡏⠀⢿⡄⠀", delay: 100 },
-    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⢸⡇⠀", delay: 100 },
-    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⢸⡇⠀", delay: 100 },
-    { text: "⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⡿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⣾⠃⠀", delay: 100 },
-    { text: "⠀⠀⠀⠀⢀⣴⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⠃⠀⠀⠀⢠⡟⠀⠀", delay: 100 },
-    { text: "⠀⠀⠀⢠⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⡿⠃⠀⠀⠀⠀⣼⠃⠀⠀", delay: 100 },
-    { text: "⠀⠀⢠⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⡟⠁⠀⠀⠀⠀⣼⠇⠀⠀⠀", delay: 100 },
-    { text: "⠀⠀⣾⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⡿⠋⠀⠀⠀⠀⢀⣼⠏⠀⠀⠀⠀", delay: 100 },
-    { text: "⠀⢸⣿⣿⣧⠀⠀⠀⠀⢀⣠⣴⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⣠⡾⠃⠀⠀⠀⠀⠀", delay: 100 },
-    { text: "⠀⢸⣿⣿⣿⣷⣶⣶⣿⣿⣿⡿⠟⠋⠁⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀", delay: 100 },
-    { text: "⠀⠀⠙⠿⠿⠿⠿⠟⠛⠉⠁⠀⠀⠀⠀⠀⠀⢀⣤⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀", delay: 100 },
-    { text: "⠀⠀⠀⠀⠀⠒⠶⢶⣤⣤⣤⣤⣤⣤⣴⠶⠞⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀", delay: 100 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
-    { text: "Grabbing avocados...", delay: 200 },
-    { text: "Sharpening knife...", delay: 200 },
-    { text: "Dicing onion...", delay: 200 },
-    { text: "Finding bandaids...", delay: 200 },
-    { text: "Squeezing lime...", delay: 200 },
-    { text: "Discovering new cuts...", delay: 200 },
-    { text: "Searching for a heavier bowl...", delay: 200 },
-    { text: ".", delay: 50 },
-    { text: ".", delay: 50 },
-    { text: ".", delay: 50 },
-    { text: ".", delay: 50 },
-    { text: ".", delay: 50 },
-    { text: "ENTER SECRET INGREDIENT...", delay: 100 },
-    { text: "***********", delay: 100 },
-    { text: ".", delay: 50 },
-    { text: ".", delay: 50 },
-    { text: ".", delay: 50 },
-    { text: "Testing taste.", delay: 100 },
-    { text: "September 14, 2024", delay: 100 },
-    { text: "You know the rules.", delay: 100 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
-    { text: "\u00A0", delay: 50 },
+    { text: "Welcome to", delay: 150, typewriter: true, typeSpeed: "slow"  },
+    { text: "               ", delay: 150, },
+    { text: "               ", delay: 150, },
+    { text: "               ", delay: 150, },
+    { text: "8\"\"\"\"8 8   8 8\"\"\"\"8 8\"\"\"\"8    8\"\"\"88 8\"\"\"\" 8\"\"\"\"    eeee eeeeee eeee 88     ", delay: 250, typewriter: false, },
+    { text: "8    \" 8   8 8    8 8    \"    8    8 8     8           8 8    8    8 88     ", delay: 250, typewriter: false },
+    { text: "8e     8e  8 8eeee8 8e        8    8 8eeee 8eeee       8 8    8    8 88  88 ", delay: 250, typewriter: false },
+    { text: "88  ee 88  8 88   8 88        8    8 88    88       eee8 8    8 eee8 88ee88 ", delay: 250, typewriter: false },
+    { text: "88   8 88  8 88   8 88   e    8    8 88    88       8    8    8 8        88 ", delay: 250, typewriter: false },
+    { text: "88eee8 88ee8 88   8 88eee8    8eeee8 88    88       8eee 8eeee8 8eee     88 ", delay: 250, typewriter: false },
+    { text: "               ", delay: 150, },
+    { text: "GUACAMOLE FRIENDS SYSTEMS INCORPORATED 2024", delay: 1000, typewriter: true, typeSpeed: "slow"  },
+    { text: "               ", delay: 150, },
+    { text: "               ", delay: 150, },
+    { text: "Booting system....................", delay: 1000, typewriter: false  },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Grabbing avocados.................", delay: 200, typewriter: false  },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Sharpening knife..................", delay: 200, typewriter: false  },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Dicing onion......................", delay: 200, typewriter: false  },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Finding bandaids..................", delay: 200, typewriter: false  },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Squeezing lime....................", delay: 200, typewriter: false  },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Discovering new cuts..............", delay: 200, typewriter: false  },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Searching for a heavier bowl......", delay: 200, typewriter: false  },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "DOWNLOADING AVOCADOS..............", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⣾⣿⣿⣷⢰⣆⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⡏⠀⢿⡄⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⢸⡇⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⢸⡇⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⡿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⣾⠃⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⢀⣴⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⠃⠀⠀⠀⢠⡟⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⢠⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⡿⠃⠀⠀⠀⠀⣼⠃⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⢠⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⡟⠁⠀⠀⠀⠀⣼⠇⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⣾⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⡿⠋⠀⠀⠀⠀⢀⣼⠏⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⢸⣿⣿⣧⠀⠀⠀⠀⢀⣠⣴⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⣠⡾⠃⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⢸⣿⣿⣿⣷⣶⣶⣿⣿⣿⡿⠟⠋⠁⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠙⠿⠿⠿⠿⠟⠛⠉⠁⠀⠀⠀⠀⠀⠀⢀⣤⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠒⠶⢶⣤⣤⣤⣤⣤⣤⣴⠶⠞⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: ".", delay: 50, typewriter: false  },
+    { text: ".", delay: 50, typewriter: false  },
+    { text: ".", delay: 50, typewriter: false  },
+    { text: ".", delay: 50, typewriter: false  },
+    { text: ".", delay: 50, typewriter: false  },
+    { text: "WHAT IS THE SECRET INGREDIENT?", delay: 2000, typewriter: true, typeSpeed: "slow"  },
+    { text: "***********", delay: 1000, typewriter: true, typeSpeed: "slow" }, // Custom speed },
+    { text: ".", delay: 50, typewriter: false  },
+    { text: ".", delay: 50, typewriter: false  },
+    { text: ".", delay: 50, typewriter: false  },
+    { text: "Testing taste.", delay: 100, typewriter: false  },
+    { text: "September 14, 2024", delay: 100, typewriter: false  },
+    { text: "You know the rules.", delay: 100, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "\u00A0", delay: 50, typewriter: false  },
     // ... add more messages with delays
+
+
+  // ... your console lines with delays
 ];
 
 let messageIndex = 0;
+let fastMode = false; // Flag for fast mode (optional)
+
+const typingSpeeds = {
+  slow: 100,
+  fast: 50,
+}; // Define speeds as constants
 
 function displayNextMessage() {
-    if (messageIndex < consoleLines.length) {
-        const currentMessage = consoleLines[messageIndex];
-        consoleElement.textContent += currentMessage.text + "\n";
+  if (messageIndex < consoleLines.length) {
+    const currentMessage = consoleLines[messageIndex];
+    if (currentMessage.typewriter) {
+      const speed = typingSpeeds[currentMessage.typeSpeed] || (fastMode ? typingSpeeds.fast : typingSpeeds.slow);
+      typewrite(currentMessage.text.split("\n"), speed, () => {
         messageIndex++;
         consoleElement.scrollTop = consoleElement.scrollHeight;
-        setTimeout(displayNextMessage, currentMessage.delay || 1000);
+        setTimeout(displayNextMessage, fastMode ? 50 : (currentMessage.delay || 1000));
+      });
+    } else {
+      consoleElement.textContent += currentMessage.text + "\n";
+      messageIndex++;
+      consoleElement.scrollTop = consoleElement.scrollHeight;
+      setTimeout(displayNextMessage, fastMode ? 50 : (currentMessage.delay || 1000));
     }
+  }
 }
 
-var delaydefault = 100 // I want to be able to enable a debug mode so the delays are minimal
+function typewrite(textLines, typeSpeed, callback) {
+  let currentLineIndex = 0;
+  let currentCharIndex = 0;
+
+  const typingSpeed = Math.max(typeSpeed, 10); // Ensure minimum speed
+
+  const typeInterval = setInterval(() => {
+    if (currentLineIndex >= textLines.length) {
+      clearInterval(typeInterval);
+      callback();
+      return;
+    }
+
+    const currentLine = textLines[currentLineIndex];
+    consoleElement.textContent += currentLine.charAt(currentCharIndex);
+    currentCharIndex++;
+
+    if (currentCharIndex >= currentLine.length) {
+      currentLineIndex++;
+      currentCharIndex = 0;
+      consoleElement.textContent += "\n"; // Add newline after each line
+    }
+  }, typingSpeed);
+}
 
 displayNextMessage(); // Start displaying messages
+
+// Function to toggle fast mode (optional)
+function toggleFastMode() {
+  fastMode = !fastMode;
+  console.log(`Fast mode is now: ${fastMode ? "ON" : "OFF"}`);
+}
+
+// Call toggleFastMode() to enable/disable fast mode manually (optional)
+// toggleFastMode();

@@ -7,7 +7,7 @@ body {
     background-image: linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0) 50%, rgba(0, 0, 0, 0.1) 100%);
     background-size: 100% 3px;
     /* background-repeat: no-repeat; */
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #console {
