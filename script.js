@@ -1,5 +1,8 @@
 const consoleElement = document.getElementById('console');
 const consoleLines = [
+    { text: "               ", delay: 150, },
+    { text: "               ", delay: 150, },
+    { text: "               ", delay: 150, },
     { text: "Welcome to", delay: 150, typewriter: true, typeSpeed: "slow"  },
     { text: "               ", delay: 150, },
     { text: "               ", delay: 150, },
