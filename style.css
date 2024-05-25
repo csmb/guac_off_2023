@@ -1,7 +1,7 @@
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   body {
-    font-size: 14px; /* Change font size to 14px for mobile */
+    font-size: 12px; /* Change font size to 14px for mobile */
   }
 }
 
