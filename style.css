@@ -3,18 +3,21 @@ body {
   font-size: 16px;
   background-color: #329f21;
   color: #0f0;
-  margin: 0;
-  padding: 0px 20px;
-  background-image: linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0) 50%, rgba(0, 0, 0, 0.1) 100%);
+  margin: 16px;
+  background-image: linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0) 50%, rgba(0, 0, 0, 0.1) 100%); /*scanlines */
   background-size: 100% 3px;
-  /* background-repeat: no-repeat; */
 }
 
 #console {
   white-space: pre-wrap;
-  overflow: auto;
+  overflow: hidden;
   margin: auto;
   height: 100vh;
+  border-radius: 48px;
+  background-color: #329f21;
+  background: radial-gradient(circle at center, rgb(51 102 0 / 80%) 0%, rgba(0, 0, 0, 0) 110%);
+  padding: 16px;
+  box-shadow: inset 0px 0px 20px 0px #038300;
 }
 
 .cursor {
@@ -30,5 +33,11 @@ body {
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px; /* Change font size to 14px for mobile */
+    margin: 8px;
+  }
+
+  #console {
+    border-radius: 16px;
+    padding: 8px;
   }
 }
