@@ -1,19 +1,27 @@
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Change font size to 14px for mobile */
+  }
+}
+
+/* Your existing styles */
 body {
-    font-family: monospace;
-    background-color: #329f21;
-    color: #0f0;
-    margin: 0;
-    padding: 0px 20px;
-    background-image: linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0) 50%, rgba(0, 0, 0, 0.1) 100%);
-    background-size: 100% 3px;
-    /* background-repeat: no-repeat; */
-    font-size: 16px;
+  font-family: monospace;
+  font-size: 16px;
+  background-color: #329f21;
+  color: #0f0;
+  margin: 0;
+  padding: 0px 20px;
+  background-image: linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0) 50%, rgba(0, 0, 0, 0.1) 100%);
+  background-size: 100% 3px;
+  /* background-repeat: no-repeat; */
 }
 
 #console {
   white-space: pre-wrap;
   overflow: auto;
-  margin: auto;   
+  margin: auto;
   height: 100vh;
 }
 
@@ -25,4 +33,3 @@ body {
   from { opacity: 1; }
   to { opacity: 0; }
 }
-
