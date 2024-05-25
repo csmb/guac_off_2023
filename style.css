@@ -10,15 +10,16 @@ body {
 
 #console {
   white-space: pre-wrap;
-  overflow: hidden;
+  overflow: scroll;
   margin: auto;
-  height: 100vh;
+  height: 90vh;
   border-radius: 48px;
   background-color: #329f21;
   background: radial-gradient(circle at center, rgb(51 102 0 / 80%) 0%, rgba(0, 0, 0, 0) 110%);
   padding: 16px;
   padding-bottom: 32px;
   box-shadow: inset 0px 0px 20px 0px #038300;
+  text-align: center;
 }
 
 .cursor {
