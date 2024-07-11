@@ -90,7 +90,7 @@ let messageIndex = 0;
 let fastMode = true; // Flag for fast mode (optional)
 
 const typingSpeeds = {
-  veryslow: 500,
+  veryslow: 100,
   slow: 50,
   fast: 10,
 }; // Define speeds as constants
