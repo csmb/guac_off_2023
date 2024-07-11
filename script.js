@@ -69,7 +69,6 @@ const consoleLines = [
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "***********", delay: 1000, typewriter: true, typeSpeed: "slow" }, // Custom speed },
     { text: "\u00A0", delay: 50, typewriter: false  },
-    { text: "Testing taste.", delay: 100, typewriter: false  },
     { text: "September 14, 2024", delay: 100, typewriter: false  },
     { text: "You know the rules.", delay: 100, typewriter: false  },
     { text: "\u00A0", delay: 50, typewriter: false  },
@@ -88,7 +87,7 @@ const consoleLines = [
 ];
 
 let messageIndex = 0;
-let fastMode = true; // Flag for fast mode (optional)
+let fastMode = false; // Flag for fast mode (optional)
 
 const typingSpeeds = {
   slow: 50,
