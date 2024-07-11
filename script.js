@@ -67,10 +67,10 @@ const consoleLines = [
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "WHAT IS THE SECRET INGREDIENT?", delay: 2000, typewriter: true, typeSpeed: "slow"  },
     { text: "\u00A0", delay: 50, typewriter: false  },
-    { text: "***********", delay: 1000, typewriter: true, typeSpeed: "slow" }, // Custom speed },
+    { text: "***********", delay: 1000, typewriter: true, typeSpeed: "veryslow" }, // Custom speed },
     { text: "\u00A0", delay: 50, typewriter: false  },
-    { text: "September 14, 2024", delay: 100, typewriter: false  },
-    { text: "You know the rules.", delay: 100, typewriter: false  },
+    { text: "September 14, 2024", delay: 100, typewriter: true, typeSpeed: "fast"  },
+    { text: "You know the rules.", delay: 100, typewriter: true, typeSpeed: "fast"  },
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "\u00A0", delay: 50, typewriter: false  },
@@ -87,9 +87,10 @@ const consoleLines = [
 ];
 
 let messageIndex = 0;
-let fastMode = false; // Flag for fast mode (optional)
+let fastMode = true; // Flag for fast mode (optional)
 
 const typingSpeeds = {
+  veryslow: 500,
   slow: 50,
   fast: 10,
 }; // Define speeds as constants
