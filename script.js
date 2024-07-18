@@ -29,40 +29,40 @@ const consoleLines = [
     { text: "", delay: 150, },
     { text: "", delay: 150, },
     { text: "", delay: 150, },
-    { text: "Booting system....................", delay: 1000, typewriter: false  },
-    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
-    { text: "Grabbing avocados.................", delay: 200, typewriter: false  },
-    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
-    { text: "Sharpening knife..................", delay: 200, typewriter: false  },
-    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
-    { text: "Dicing onion......................", delay: 200, typewriter: false  },
-    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
-    { text: "Finding bandaids..................", delay: 200, typewriter: false  },
-    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
-    { text: "Squeezing lime....................", delay: 200, typewriter: false  },
-    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
-    { text: "Discovering new cuts..............", delay: 200, typewriter: false  },
-    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
-    { text: "Searching for a heavier bowl......", delay: 200, typewriter: false  },
-    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
-    { text: "DOWNLOADING AVOCADOS..............", delay: 100, typewriter: true, typeSpeed: "fast" },
-    { text: "..................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Booting system..........................", delay: 1000, typewriter: false  },
+    { text: "........................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Grabbing avocados.......................", delay: 200, typewriter: false  },
+    { text: "........................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Sharpening knife........................", delay: 200, typewriter: false  },
+    { text: "........................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Dicing onion............................", delay: 200, typewriter: false  },
+    { text: "........................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Finding bandaids........................", delay: 200, typewriter: false  },
+    { text: "........................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Squeezing lime..........................", delay: 200, typewriter: false  },
+    { text: "........................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Discovering new cuts....................", delay: 200, typewriter: false  },
+    { text: "........................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "Searching for a heavier bowl............", delay: 200, typewriter: false  },
+    { text: "........................................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "DOWNLOADING AVOCADOS....................", delay: 100, typewriter: true, typeSpeed: "fast" },
+    { text: "........................................", delay: 100, typewriter: true, typeSpeed: "fast" },
     { text: "", delay: 150, },
     { text: "", delay: 150, },
     { text: "", delay: 150, },
-    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⣾⣿⣿⣷⢰⣆⠀⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⡏⠀⢿⡄⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⢸⡇⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⢸⡇⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⡿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⣾⠃⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⠀⠀⢀⣴⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⠃⠀⠀⠀⢠⡟⠀⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⠀⢠⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⡿⠃⠀⠀⠀⠀⣼⠃⠀⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⢠⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⡟⠁⠀⠀⠀⠀⣼⠇⠀⠀⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⣾⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⡿⠋⠀⠀⠀⠀⢀⣼⠏⠀⠀⠀⠀", delay: 100, typewriter: false  },
-    { text: "⠀⢸⣿⣿⣧⠀⠀⠀⠀⢀⣠⣴⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⣠⡾⠃⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
-    { text: "⠀⢸⣿⣿⣿⣷⣶⣶⣿⣿⣿⡿⠟⠋⠁⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⠙⠿⠿⠿⠿⠟⠛⠉⠁⠀⠀⠀⠀⠀⠀⢀⣤⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
-    { text: "⠀⠀⠀⠀⠀⠒⠶⢶⣤⣤⣤⣤⣤⣤⣴⠶⠞⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⣾⣿⣿⣷⢰⣆⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⡏⠀⢿⡄⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⢸⡇⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⢸⡇⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣾⣿⣿⡿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⣾⠃⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⠟⠋⠀⠀⠀⠀⠀⠀⠙⣿⣿⣿⣿⣿⠃⠀⠀⠀⢠⡟⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⢠⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⡿⠃⠀⠀⠀⠀⣼⠃⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⢠⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⡟⠁⠀⠀⠀⠀⣼⠇⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⣾⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⡿⠋⠀⠀⠀⠀⢀⣼⠏⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⢸⣿⣿⣧⠀⠀⠀⠀⢀⣠⣴⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⣠⡾⠃⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⢸⣿⣿⣿⣷⣶⣶⣿⣿⣿⡿⠟⠋⠁⠀⠀⠀⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠙⠿⠿⠿⠿⠟⠛⠉⠁⠀⠀⠀⠀⠀⠀⢀⣤⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
+    { text: "⠀⠀⠀⠀⠀⠀⠀⠀⠒⠶⢶⣤⣤⣤⣤⣤⣤⣴⠶⠞⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀", delay: 100, typewriter: false  },
     { text: "", delay: 150, },
     { text: "", delay: 150, },
     { text: "", delay: 150, },
@@ -153,3 +153,31 @@ function toggleFastMode() {
 
 // Call toggleFastMode() to enable/disable fast mode manually (optional)
 // toggleFastMode();
+
+
+$(document).ready(function () {
+  var lastX = -1;
+    var lastY = -1;
+    var moveMinimum = 2;
+    
+    $("body").mousemove(function (e) {
+        handleMouseMove(e);
+    });
+
+    function handleMouseMove(event) {
+
+        var x = event.pageX;
+        var y = event.pageY;
+    
+        if ( lastX == -1 || ( Math.abs(lastX - x) > moveMinimum || Math.abs(lastY - y) > moveMinimum ) ) {
+        
+            $("#cube").animate({
+                left: x,
+                top: y
+            }, 1);
+        }
+        
+        lastX = x;
+        lastY = y;
+    }
+});
