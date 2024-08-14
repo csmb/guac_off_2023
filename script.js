@@ -74,6 +74,7 @@ const consoleLines = [
     { text: "***********", delay: 1000, typewriter: true, typeSpeed: "veryslow" }, // Custom speed },
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "September 14, 2024", delay: 100, typewriter: true, typeSpeed: "fast"  },
+    { text: "1pm until the last chip is chewed", delay: 100, typewriter: true, typeSpeed: "fast"  },
     { text: "The rules:", delay: 100, typewriter: true, typeSpeed: "fast"  },
     { text: "Your guacamole must use at least 8 avocados.", delay: 100, typewriter: true, typeSpeed: "fast"  },
     { text: "Bring guacamole. Or your friend. Or a beverage.", delay: 100, typewriter: true, typeSpeed: "fast"  },
