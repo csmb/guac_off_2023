@@ -7,7 +7,7 @@ body {
     background-image: linear-gradient(to bottom, rgb(0 0 0) 0%, rgb(0 0 0) 50%, rgba(0, 0, 0, 0.1) 100%);
     /*scanlines */
     background-size: 100% 3px;
-    cursor: none;
+/*    cursor: none;*/
 }
 
 #console {
@@ -23,7 +23,7 @@ body {
     text-align: center;
 }
 
-.cursor {
+/*.cursor {
     animation: blink 0.5s step-end infinite;
 }
 
@@ -38,7 +38,7 @@ body {
     top:50%;
     left:50%;
 }
-
+*/
 
 @keyframes blink {
     from {

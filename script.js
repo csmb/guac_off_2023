@@ -124,15 +124,15 @@ function displayNextMessage() {
     const currentMessage = consoleLines[messageIndex];
     if (currentMessage.typewriter) {
       const speed = typingSpeeds[currentMessage.typeSpeed] || (fastMode ? typingSpeeds.fast : typingSpeeds.slow);
+      consoleElement.scrollTop = consoleElement.scrollHeight; // Set scrollTop before adding content
       typewrite(currentMessage.text.split("\n"), speed, () => {
         messageIndex++;
-        consoleElement.scrollTop = consoleElement.scrollHeight;
         setTimeout(displayNextMessage, fastMode ? 50 : (currentMessage.delay || 1000));
       });
     } else {
+      consoleElement.scrollTop = consoleElement.scrollHeight; // Set scrollTop before adding content for non-typewriter messages
       consoleElement.textContent += currentMessage.text + "\n";
       messageIndex++;
-      consoleElement.scrollTop = consoleElement.scrollHeight;
       setTimeout(displayNextMessage, fastMode ? 50 : (currentMessage.delay || 1000));
     }
   }
@@ -175,29 +175,29 @@ function toggleFastMode() {
 // toggleFastMode();
 
 
-$(document).ready(function () {
-  var lastX = -1;
-    var lastY = -1;
-    var moveMinimum = 2;
+// $(document).ready(function () {
+//   var lastX = -1;
+//     var lastY = -1;
+//     var moveMinimum = 2;
     
-    $("body").mousemove(function (e) {
-        handleMouseMove(e);
-    });
+//     $("body").mousemove(function (e) {
+//         handleMouseMove(e);
+//     });
 
-    function handleMouseMove(event) {
+//     function handleMouseMove(event) {
 
-        var x = event.pageX;
-        var y = event.pageY;
+//         var x = event.pageX;
+//         var y = event.pageY;
     
-        if ( lastX == -1 || ( Math.abs(lastX - x) > moveMinimum || Math.abs(lastY - y) > moveMinimum ) ) {
+//         if ( lastX == -1 || ( Math.abs(lastX - x) > moveMinimum || Math.abs(lastY - y) > moveMinimum ) ) {
         
-            $("#cube").animate({
-                left: x,
-                top: y
-            }, 1);
-        }
+//             $("#cube").animate({
+//                 left: x,
+//                 top: y
+//             }, 1);
+//         }
         
-        lastX = x;
-        lastY = y;
-    }
-});
+//         lastX = x;
+//         lastY = y;
+//     }
+// });
