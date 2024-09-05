@@ -101,6 +101,7 @@ const consoleLines = [
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "\u00A0", delay: 50, typewriter: false  },
+    { text: "Email if you love guacamole and have questions:", delay: 100, typewriter: true, typeSpeed: "fast"  },
     { text: "MissionGuacParty@gmail.com", delay: 100, typewriter: true, typeSpeed: "fast"  },
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "\u00A0", delay: 50, typewriter: false  },
