@@ -75,7 +75,7 @@ const consoleLines = [
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "September 14, 2024", delay: 100, typewriter: true, typeSpeed: "fast"  },
     { text: "1pm until the last chip is chewed", delay: 100, typewriter: true, typeSpeed: "fast"  },
-    { text: "Bernal Heights", delay: 100, typewriter: true, typeSpeed: "fast"  },
+    { text: "3340 Folsom Street – Bernal Heights", delay: 100, typewriter: true, typeSpeed: "fast"  },
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "\u00A0", delay: 50, typewriter: false  },
     { text: "The rules:", delay: 100, typewriter: true, typeSpeed: "fast"  },
