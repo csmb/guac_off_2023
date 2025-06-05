@@ -6,6 +6,7 @@ body {
     line-height: 1.6;
     color: #fff;
     background-color: #000;
+    text-align: center;
 }
 
 .container {
@@ -22,7 +23,6 @@ header {
     color: #fff;
     padding-top: 20px;
     min-height: 70px;
-    border-bottom: #77aaff 3px solid;
     text-align: center;
 }
 
@@ -65,6 +65,7 @@ section {
     color: #fff;
     padding: 40px 0;
     background-color: #000;
+    text-align: center;
 }
 
 section h2 {
