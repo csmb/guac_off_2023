@@ -76,10 +76,11 @@ section h2 {
 
 /* Hero Section */
 .hero {
-    background: #000 url('https://via.placeholder.com/1500x500/0000FF/808080?text=Event+Banner+Image') no-repeat center center/cover; /* Replace with your banner image */
+    background: #000 url(images/logo.png) no-repeat center;
     color: #000;
     text-align: center;
     padding: 100px 0;
+    height: 400px;
 }
 
 .hero h2 {
