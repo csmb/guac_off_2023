@@ -266,4 +266,8 @@ footer .social-links a:hover {
     .speaker-grid {
         grid-template-columns: 1fr;
     }
+
+    img {
+        width: 100%;
+    }
 }
