@@ -240,6 +240,11 @@ footer .social-links a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    
+    header p {
+        line-height: 1.15;
+    }
+
     .container {
         width: 95%;
     }
@@ -251,6 +256,7 @@ footer .social-links a:hover {
 
     .hero {
         padding: 60px 0;
+        height: 200px;
     }
 
     .hero h2 {
