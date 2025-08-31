@@ -1,6 +1,36 @@
 /* Basic Reset & Body Styles */
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+a {
+    color: white;
+}
+
 body {
-    font-family: "EB Garamond", serif;
+    font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -9,12 +39,18 @@ body {
     color: #fff;
     background-color: #000;
     text-align: center;
+    letter-spacing: .8;
 }
 
 p {
     font-size: 2em;
     margin: 0;
     letter-spacing: 2px;
+}
+
+#hero {
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
 .container {
@@ -25,6 +61,11 @@ p {
     padding: 20px 0;
 }
 
+#marquee {
+    width: 50%;
+    text-align: center  ;
+}
+
 /* Header */
 header {
     
@@ -32,6 +73,16 @@ header {
     padding-top: 20px;
     min-height: 70px;
     text-align: center;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1;
 }
 
 header h1 {
@@ -241,6 +292,11 @@ footer .social-links a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     
+    p {
+        font-size: 1.6em;
+        line-height: 1.4;
+    }
+
     header p {
         line-height: 1.15;
     }
@@ -261,6 +317,10 @@ footer .social-links a:hover {
 
     .hero h2 {
         font-size: 2.2em;
+    }
+
+    h2 {
+        line-height: 1;
     }
 
     .hero .date,
